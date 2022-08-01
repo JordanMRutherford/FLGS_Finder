@@ -1,4 +1,4 @@
-import stores from '../modules/storesJSON.geojson' assert {type: 'json'};
+// import stores from '../modules/storesJSON.geojson' assert {type: 'json'};
 
 const booleanTrue = 
 `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#064e3b" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
