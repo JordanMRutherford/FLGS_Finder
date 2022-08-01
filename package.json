@@ -1,0 +1,16 @@
+{
+  "name": "flgs-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mapbox/mapbox-sdk": "^0.13.3",
+    "mapbox-gl": "^2.8.1",
+    "requirejs": "^2.3.6"
+  }
+}
