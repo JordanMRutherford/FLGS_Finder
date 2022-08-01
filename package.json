@@ -2,15 +2,19 @@
   "name": "flgs-finder",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "default": "/pages/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel ./pages/index.html",
+    "build": "parcel build ./pages/index.html --dist-dir ./dist" 
   },
-  "author": "",
+  "author": "Jordan Rutherford",
   "license": "ISC",
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.13.3",
     "mapbox-gl": "^2.8.1",
     "requirejs": "^2.3.6"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.2"
   }
 }
