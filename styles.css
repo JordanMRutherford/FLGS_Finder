@@ -9,6 +9,12 @@ emerald-700 - Dark Green - #047857
 emerald-800 - Darkest Green - #065f46
 */
 
+/* ---- TAILWIND ---- */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* ---- INDEX ---- */
 
 .home_listing {
