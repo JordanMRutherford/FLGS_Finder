@@ -1090,7 +1090,7 @@ const stores = [
       city:"Vanier",
       province:"Ontario",
       phoneNumber:"(613) 555-0132",
-      imageAddress:"FLGSFinder/img/stores/store32.jpg",
+      imageAddress:"/img/stores/store32.jpg",
       domesticGames:true,
       importGames:false,
       miniatureGames:true,
