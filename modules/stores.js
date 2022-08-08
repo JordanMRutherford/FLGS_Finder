@@ -1046,7 +1046,7 @@ const stores = [
       city:"Thunder Bay",
       province:"Ontario",
       phoneNumber:"(807) 555-0136",
-      imageAddress:"../img/stores/store36.jpg",
+      imageAddress:"../../img/stores/store36.jpg",
       domesticGames:true,
       importGames:false,
       miniatureGames:true,
