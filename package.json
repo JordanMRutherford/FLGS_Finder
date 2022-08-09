@@ -1,8 +1,8 @@
 {
   "name": "flgs-finder",
   "version": "1.0.0",
-  "description": "",
-  "default": "/pages/index.html",
+  "description": "FLGS Finder Page",
+  "default": "index.html",
   "scripts": {
     "start": "parcel ./pages/index.html",
     "build": "parcel build ./pages/index.html --dist-dir ./dist" 
@@ -12,9 +12,7 @@
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.13.3",
     "mapbox-gl": "^2.8.1",
-    "requirejs": "^2.3.6"
-  },
-  "devDependencies": {
+    "requirejs": "^2.3.6",
     "parcel": "^2.6.2"
   }
 }
