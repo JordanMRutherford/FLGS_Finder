@@ -1,0 +1,392 @@
+.home_listing {
+  font-size: 100%;
+}
+
+.listings {
+  height: 100%;
+  padding-bottom: 60px;
+  overflow: auto;
+}
+
+.listings .item {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.listings .item:last-child {
+  border-bottom: none;
+}
+
+.listings .item .title {
+  color: #00853e;
+  font-weight: 700;
+  display: block;
+}
+
+.listings .item .title small {
+  font-weight: 400;
+}
+
+.listings .item.active .title, .listings .item .title:hover {
+  color: #8cc63f;
+}
+
+.listings .item.active {
+  background-color: #f8f8f8;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  background: #0000001a;
+  border-left: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00853e;
+  border-radius: 0;
+}
+
+.popup {
+  grid-template-rows: 1fr 10px 1fr;
+  grid-template-columns: 1fr .25fr;
+  justify-items: center;
+  margin: 0;
+  padding: 0 .5rem .5rem;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  display: grid;
+}
+
+.popup_storePic {
+  display: none;
+}
+
+.popup_storeDetails {
+  text-align: center;
+  white-space: nowrap;
+  grid-column: 1 / 3;
+  margin: .5rem 0 0;
+}
+
+.popup_storeDetails p {
+  font-weight: bold;
+}
+
+.popup_storeDetails p:first-child {
+  text-decoration: underline;
+}
+
+.popup_storeDetails_rule {
+  width: 90%;
+  height: 1rem;
+  grid-column: 1 / 3;
+  grid-row-start: 3;
+}
+
+.popup_storeSpecialties {
+  grid-column: 1 / 2;
+  grid-row-start: 2;
+  margin: 1.25rem 0 0;
+  line-height: 1.35;
+}
+
+.popup_storeSpecialties_boolean {
+  grid-column: 2 / 3;
+  grid-row-start: 2;
+  margin: 1.25rem 0 0;
+  line-height: 1.35;
+}
+
+.popup_storeSpecialties_boolean p {
+  padding: 0 0 0 .25rem;
+  position: relative;
+}
+
+.map {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 72px;
+  bottom: 0;
+}
+
+.mapboxgl-popup {
+  max-width: 90% !important;
+}
+
+.mapboxgl-popup-content {
+  background-color: #fafafa;
+  border-radius: .25rem;
+  outline: 2px solid #059669;
+  margin: 0;
+  padding: 0;
+}
+
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip, .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip, .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+  border-bottom-color: #059669;
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip, .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip, .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+  border-top-color: #059669;
+}
+
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+  border-right-color: #059669;
+}
+
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+  border-left-color: #059669;
+}
+
+.mapboxgl-ctrl-geocoder {
+  display: none;
+}
+
+.mapboxgl-ctrl-geocoder > div {
+  min-width: 100%;
+  margin-left: 0;
+}
+
+.mapboxgl-ctrl-geocoder--input {
+  margin-left: 1.5rem;
+}
+
+.switch {
+  width: 50px;
+  height: 28px;
+  display: inline-block;
+  position: relative;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  cursor: pointer;
+  background-color: #d4d4d8;
+  transition: all .4s;
+  position: absolute;
+  inset: 0;
+}
+
+.slider:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: #fafafa;
+  transition: all .4s;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+}
+
+input:checked + .slider {
+  background-color: #059669;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #059669;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: #059669;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #047857;
+}
+
+input[type="file"]:focus {
+  outline-color: #047857;
+}
+
+.submit {
+  font-size: 14px;
+}
+
+.modal {
+  opacity: 0;
+  z-index: 2;
+  height: 50%;
+  width: 76%;
+  border-radius: 4px;
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 12%;
+}
+
+.backdrop {
+  opacity: 0;
+  z-index: 2;
+  display: none;
+}
+
+.open {
+  opacity: 1 !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .home_listing {
+    font-size: 110%;
+  }
+
+  .home_listing_text {
+    padding-top: .25rem;
+  }
+
+  .sidebar {
+    display: block;
+    top: 96px;
+  }
+
+  .popup {
+    grid-template-rows: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 0;
+    padding: .25rem;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    display: grid;
+  }
+
+  .popup_storePic {
+    grid-column-start: 1;
+    display: block;
+  }
+
+  .popup_storePic img {
+    max-width: 100px;
+    position: relative;
+  }
+
+  .popup_storeDetails {
+    text-align: center;
+    white-space: nowrap;
+    grid-column: 2 / 4;
+    margin: .5rem 0 0;
+  }
+
+  .popup_storeDetails_rule {
+    grid-column-end: 4;
+  }
+
+  .popup_storeSpecialties {
+    grid-column: 1 / 3;
+    grid-row-start: 2;
+    margin: 1.25rem 0 0;
+    line-height: 1.35;
+  }
+
+  .popup_storeSpecialties_boolean {
+    grid-column: 3 / 4;
+    grid-row-start: 2;
+    margin: 1.25rem 0 0;
+    line-height: 1.35;
+  }
+
+  .popup_storeSpecialties_boolean p {
+    position: relative;
+    right: 2rem;
+  }
+
+  .map {
+    width: 75%;
+    position: absolute;
+    top: 96px;
+    left: 25%;
+  }
+
+  .mapboxgl-ctrl-geocoder {
+    width: 800px;
+    border: 0;
+    border-radius: 0;
+    margin-top: 0;
+    display: block;
+    position: relative;
+    top: 0;
+  }
+
+  .mapboxgl-ctrl button {
+    display: none;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: .5rem 9rem .5rem .5rem;
+  }
+
+  .submit {
+    padding: 15px 32px;
+    font-size: 16px;
+  }
+
+  .modal {
+    height: 50%;
+    width: 55%;
+    top: 20%;
+    left: 22.5%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .home_listing {
+    height: 5.5rem;
+    font-size: 90%;
+  }
+
+  .map {
+    width: 80%;
+    left: 20%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .home_listing {
+    height: 7rem;
+    font-size: 110%;
+  }
+
+  input[type="file"] {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .home_listing {
+    height: 10rem;
+    font-size: 140%;
+  }
+
+  input[type="file"]::file-selector-button {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+/*# sourceMappingURL=index.1303bb05.css.map */

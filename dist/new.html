@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Location - FLGS Finder</title>
+
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.1/dist/flowbite.min.css">
+    <link rel="stylesheet" type="text/css" href="/index.e57bee09.css">
+
+  </head>
+  <body class="bg-zinc-300 font-raleway  md:overflow-hidden">
+
+    <nav class="bg-emerald-600 shadow-lg px-4 py-2 md:px-2">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="/index.html" class="flex items-center">
+            <img src="/FLGS_logo_mini.ee492495.png" class="mr-3 h-14 md:h-20" alt="FLGS Finder Logo">
+            <p class="block py-2 px-1 text-zinc-50 text-2xl font-bold  4xl:text-3xl">FLGS Finder</p>
+        </a>
+        <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center pt-2 text-sm text-zinc-600 rounded-lg  md:hidden" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-10 h-10" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+        
+        <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+          <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+            <li>
+              <a href="/index.html" class="block py-2 px-3 text-zinc-300 rounded hover:bg-zinc-50 hover:text-zinc-600  md:hover:bg-transparent md:border-0 md:hover:text-zinc-50 md:p-0 lg:text-lg 4xl:text-2xl">Home</a>
+            </li>
+            <li>
+              <a href="/index.html" class="block py-2 px-3 text-zinc-300 rounded hover:bg-zinc-50 hover:text-zinc-600  md:hover:bg-transparent md:border-0 md:hover:text-zinc-50 md:p-0 lg:text-lg 4xl:text-2xl">Browse</a>
+            </li>
+            <span class="mx-4 text-zinc-50 hidden md:block lg:text-lg"> | </span>
+            <li>
+              <a href="/new.html" class="block py-2 px-3 text-zinc-300 bg-emerald-900 rounded hover:bg-zinc-50 hover:text-zinc-600  md:bg-transparent md:hover:bg-transparent md:text-zinc-50 md:hover:text-zinc-50 md:p-0 dark:text-white lg:text-lg 4xl:text-2xl" aria-current="page" "="">New Location</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      
+    </nav>
+    
+    <!-- MAIN -->
+
+    <main class="grid bg-zinc-300 h-screen ">
+      <div class="bg-zinc-50">
+        <div class="grid grid-cols-10 pt-4 mb-2      lg:grid-cols-8">
+          <div class="col-start-2 col-end-10 outline outline-2 outline-emerald-600 rounded mt-4 p-1               lg:m-4 lg:col-start-2 lg:col-end-8">
+            <h1 class="text-center 4xl:text-xl">Submit your Store Details!</h1>
+            <p class="text-lg leading-6 break-normal        lg:text-xl lg:text-center 4xl:text-2xl">
+              Fill out the form below to have your store added to the FLGS Finder map!
+            </p>
+          </div>
+          <div class="col-start-2 col-end-10 outline outline-2 outline-emerald-600 rounded mt-4               lg:m-4 lg:col-start-2 lg:col-end-8">
+            
+             <form name="submit_form" class="submit_form" onsubmit="openModal(); return false;"> 
+
+                <div class="grid grid-cols-3 grid-rows-16  justify-items-center           lg:grid-cols-6 lg:grid-rows-6 lg:pt-4">
+                  <div class="col-start-1 col-end-4 row-start-1  lg:block lg:col-start-1 lg:col-end-2 lg:row-start-1">
+                    <label class="submit-form-label  4xl:text-2xl" for="name">Store Name:</label>
+                  </div>
+                  <div class="col-start-1 col-end-4 row-start-2  lg:col-start-2 lg:col-end-4 lg:row-start-1">
+                    <input class="rounded border-solid border-emerald-600 border-2 focus:border-emerald-700 focus:ring-emerald-700  4xl:text-2xl" type="text" name="name" id="name" placeholder="Store Name" required="">
+                  </div>
+
+                  <div class="col-start-1 col-end-4 row-start-3     lg:block lg:col-start-1 lg:col-end-2 lg:row-start-2">
+                    <label class="submit-form-label  4xl:text-2xl" for="address">Store Address:</label>
+                  </div>
+                  <div class="col-start-1 col-end-4 row-start-4    lg:col-start-2 lg:col-end-4 lg:row-start-2">
+                    <input class="rounded border-solid border-emerald-600 border-2 focus:border-emerald-700 focus:ring-emerald-700  4xl:text-2xl" type="text" name="address" id="address" placeholder="Address" required="">
+                  </div>
+
+                  <div class="col-start-1 col-end-4 row-start-5     lg:block lg:col-start-1 lg:col-end-2 lg:row-start-3">
+                    <label class="submit-form-label  4xl:text-2xl" for="phone">Phone Number:</label>
+                  </div>
+                  <div class="col-start-1 col-end-4 row-start-6      lg:col-start-2 lg:col-end-4 lg:row-start-3">
+                    <input class="rounded border-solid border-emerald-600 border-2 focus:border-emerald-700 focus:ring-emerald-700   4xl:text-2xl" type="text" name="phone" id="phone" placeholder="Phone" required="">
+                  </div>
+
+                  <div class="col-start-1 col-end-4 row-start-7       lg:col-end-2 lg:row-start-4"> 
+                    <label class="submit-form-label  4xl:text-2xl">Store Image:</label>
+                  </div>
+                  <div class="col-start-1 col-end-4 row-start-8 flex     lg:col-start-2 lg:col-end-4 lg:row-start-4 lg:block">        
+                    <input class="rounded border-solid border-emerald-600 border-2 w-10/12 mx-auto     md:w-full md:mx-0 focus:border-emerald-700 focus:ring-emerald-700 4xl:text-2xl" type="file" name="image" id="image" accept=".png, .jpg, .jpeg" onchange="return fileValidation()" required="">
+                    <p class="image_upload_text hidden  lg:block lg:text-xs 4xl:text-xl"> (Max size 512 KB - .jpg, .jpeg or .png formats only)</p>
+                  </div>
+                  <p class="col-start-1 col-end-4 row-start-9 text-2xs  md:text-sm lg:hidden"> (Max size 512 KB - .jpg, .jpeg or .png formats only)</p>
+
+                  <hr class="col-start-1 col-end-4 row-start-10 block bg-zinc-300 my-4 border-0 rounded clear-both h-px w-11/12   lg:hidden">
+                    
+                  <div class="col-start-1 col-end-3 row-start-11 mb-2    lg:col-start-4 lg:col-end-6 lg:row-start-1 lg:ml-6">
+                    <p class="4xl:text-2xl">Domestic Games</p>
+                  </div>
+                  <div class="col-start-3 col-end-4 row-start-11 mb-2   md:mr-28 lg:col-start-6 lg:col-end-7 lg:row-start-1 ">
+                    <label class="switch" for="domestic">
+                      <input type="checkbox" name="domestic" id="domestic">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="col-start-1 col-end-3 row-start-12 mb-2    lg:col-start-4 lg:col-end-6 lg:row-start-2 lg:ml-6">
+                    <p class="4xl:text-2xl">Import Games</p>
+                  </div>
+                  <div class="col-start-3 col-end-4 row-start-12 mb-2   md:mr-28 lg:col-start-6 lg:col-end-7 lg:row-start-2">
+                    <label class="switch" for="import">
+                      <input type="checkbox" name="import" id="import">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="col-start-1 col-end-3 row-start-13 mb-2    lg:col-start-4 lg:col-end-6 lg:row-start-3 lg:ml-6">
+                    <p class="4xl:text-2xl">Miniature Games</p>
+                  </div>
+                  <div class="col-start-3 col-end-4 row-start-13 mb-2   md:mr-28 lg:col-start-6 lg:col-end-7 lg:row-start-3">
+                    <label class="switch" for="miniature">
+                      <input type="checkbox" name="miniature" id="miniature">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="col-start-1 col-end-3 row-start-14 mb-2    lg:col-start-4 lg:col-end-6 lg:row-start-4 lg:ml-6">
+                    <p class="4xl:text-2xl">Card Games</p>
+                  </div>
+                  <div class="col-start-3 col-end-4 row-start-14 mb-2   md:mr-28 lg:col-start-6 lg:col-end-7 lg:row-start-4">
+                    <label class="switch" for="cardgames">
+                      <input type="checkbox" name="cardgames" id="cardgames">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="col-start-1 col-end-3 row-start-15 mb-2     lg:col-start-4 lg:col-end-6 lg:row-start-5 lg:ml-6">
+                    <p class="4xl:text-2xl">Roleplaying Games</p>
+                  </div>
+                  <div class="col-start-3 col-end-4 row-start-15 mb-2   md:mr-28 lg:col-start-6 lg:col-end-7 lg:row-start-5">
+                    <label class="switch" for="roleplaying">
+                      <input type="checkbox" name="roleplaying" id="roleplaying">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="col-start-2 col-end-2 row-start-16 my-2   lg:col-start-3 lg:col-end-5 lg:row-start-6 lg:mt-2">
+                    <input class="submit inline-block cursor-pointer text-zinc-50 bg-emerald-600 rounded border-solid border-emerald-600 border-2 text-center no-underline py-2.5 px-5
+                                  hover:bg-emerald-700 hover:border-emerald-600 hover:ring-emerald-600 lg:m-0 4xl:text-2xl" type="submit" value="Submit">
+                      
+                  </div>
+
+                  <!-- MODAL -->
+                
+                  <div class="modal_wrapper w-full h-full">
+                    <div class="backdrop fixed top-0 left-0 w-full h-full bg-zinc-600/50"></div>
+                    <div class="modal fixed grid grid-rows-5 content-around bg-zinc-50 rounded border-solid border-emerald-600 border-2 text-center ">
+                      <h3 class="row-start-2 place-self-center text-zinc-600 text-xl font-bold       lg:text-3xl ">Thank you for your submission!</h3>
+                      <p class="row-start-3 place-self-center text-zinc-600 font-bold mt-4       lg:text-lg lg:mt-0">Your submission will be reviewed before being added to the FLGS database.</p>
+                      <a href="/index.html" class="return-home row-start-5 place-self-center p-4 mb-2 text-xl text-zinc-50 bg-emerald-600 rounded border-solid border-emerald-600 border-2 
+                                hover:bg-emerald-700 focus:border-emerald-600 focus:ring-emerald-700   lg:mb-0">
+                        Return to Home
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+              </form>
+
+            </div>
+          </div>
+        </div>
+      
+
+    </main>
+
+    <script src="/new.f247ca8b.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    
+  <script src="/new.6621c362.js"></script></body>
+</html>
