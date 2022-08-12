@@ -2,7 +2,6 @@
   "name": "flgs-finder",
   "version": "1.0.0",
   "description": "FLGS Finder Page",
-  "default": "index.html",
   "scripts": {
     "start": "parcel ./pages/index.html",
     "build": "parcel build ./pages/index.html --dist-dir ./dist"
@@ -15,6 +14,7 @@
     "requirejs": "^2.3.6"
   },
   "devDependencies": {
+    "@parcel/config-default": "^2.7.0",
     "parcel": "^2.7.0",
     "parcel-reporter-static-files-copy": "^1.4.0"
   }
