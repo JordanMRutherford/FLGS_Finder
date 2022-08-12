@@ -1,5 +1,6 @@
 import stores from '../modules/stores.js';
 
+
 const storesDisplay = document.querySelector('.stores_display');
 
 let i;
@@ -19,3 +20,6 @@ for (let i = (stores.length - 1); i >= (stores.length - 5); i--) {
 
   storesDisplay.insertAdjacentHTML('beforeend', storeDescription);
 }
+
+
+// https://stackoverflow.com/questions/72504463/parcel-wont-load-images-in-my-javascript-file

@@ -12,7 +12,10 @@
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.13.3",
     "mapbox-gl": "^2.8.1",
-    "parcel": "^2.7.0",
     "requirejs": "^2.3.6"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "parcel-reporter-static-files-copy": "^1.4.0"
   }
 }
